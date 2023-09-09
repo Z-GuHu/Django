@@ -124,4 +124,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+#静态资源的路由,仅仅是路由，与资源存放的目录无关
 STATIC_URL = '/static/'
+#告诉系统，静态资源的路径，base_dir相对路径+目录名称（这里是static）
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
