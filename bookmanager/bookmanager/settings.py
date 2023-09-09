@@ -27,7 +27,7 @@ DEBUG = True
 
 #默认为127.0.0.1，如果需要指定不同的主机和端口，可以通过提供主机和端口参数来运行服务器，
 #在allowed_hosts 中加入主机ip
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
