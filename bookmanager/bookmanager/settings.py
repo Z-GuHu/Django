@@ -33,13 +33,14 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'book'
+    'django.contrib.admin', # Django 内置的后台管理应用程序
+    'django.contrib.auth', # 认证和用户管理应用程序
+    'django.contrib.contenttypes',# 内容类型管理应用程序
+    'django.contrib.sessions',# 会话管理应用程序
+    'django.contrib.messages',# 消息通知应用程序
+    'django.contrib.staticfiles',# 处理静态文件的应用程序
+    #'book',# 您自己创建的应用程序
+    'book.apps.BookConfig',
 ]
 
 MIDDLEWARE = [
